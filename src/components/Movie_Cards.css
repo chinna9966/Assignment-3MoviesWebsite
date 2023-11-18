@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100%;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcUDIzX0hLw4L2F1rZUn9cNNVoo2hzUwBQyw&usqp=CAU");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Movie-title {
+  font-family: "Poppins", sans-serif;
+  color: #24f5f5e0;
+  margin-top: 5px;
+  margin-bottom: 30px;
+  width: 90%;
+  box-shadow: 2px 4px 2px rgb(17 16 16 / 50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  background: linear-gradient(160deg, #360033, #36a7b2);
+  margin-left: 6%;
+  margin-right: 10%;
+}
+
+.moviecontainer {
+  display: flex;
+  padding: 0% 5%;
+  grid-gap: 0.2em;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+div {
+  color: #fff;
+  text-align: center;
+}
+.moviecontainer .moviecard {
+  text-align: center;
+  background-color: rgb(49 43 49);
+  margin: 15px 15px;
+  border-radius: 7px;
+  overflow: hidden;
+
+  width: 15%;
+  border-bottom: 2px solid transparent;
+}
+.moviecontainer .moviecard:hover {
+  cursor: pointer;
+  transform: scale(1.01);
+  border-bottom: 2px solid rgb(242, 205, 205);
+}
+.moviecontainer .moviecard img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.moviecontainer .moviecard h3 {
+  color: rgb(189, 189, 189);
+  margin: 0;
+  padding: 0px;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.moviecontainer .moviecard .moviedesc {
+  padding: 5px 12px 12px;
+  position: relative;
+}
+
+/* search */
+
+.searchcontainer {
+  margin: 0 15%;
+  margin-bottom: 40px;
+}
+.searchcontainer input {
+  width: 65%;
+  border-radius: 5px;
+  border: 1px solid #0d1616;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  height: 40px;
+  padding: 12px;
+  color: #655959;
+  background-color: #ffffff;
+}
+
+.searchcontainer input:focus-visible {
+  box-shadow: 2px 2px 3px rgb(16 31 33);
+  outline: none;
+}
+
+@media (max-width: 767px) {
+  .moviecontainer {
+    padding: 15px;
+  }
+  .moviecontainer .moviecard {
+    width: 40%;
+  }
+  .Movie-title {
+    width: 45%;
+  }
+}
